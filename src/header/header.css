@@ -1,0 +1,66 @@
+.NavbarOne {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+
+
+.NavbarOne > h1 {
+    /* Styles for the h1 element (center-aligned) */
+    text-align: center;
+}
+
+.NavbarOne > div:last-child {
+    /* Styles for the last div (right-aligned) */
+    /* background-color: pink; */
+    padding: 3px 10px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.NavbarOne > div:last-child > * {
+    /* Apply padding to all elements inside the last div */
+    padding: 4px;
+}
+
+
+/* CSS OF  NAVBARTWO*/ 
+
+.NavbarTwo > div:first-child{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-bottom : 1px solid gray;
+}
+
+.NavbarTwo > div:first-child > * {
+    padding : 10px 40px;
+    font-weight: 600;
+    font-size: larger;
+}
+
+.NavbarTwo > div:last-child{
+    border-bottom: 1px solid gray;
+   
+    text-align: center;
+}
+.NavbarTwo > div:nth-child(2) {
+    display: none;
+  
+ }
+
+@media only screen and (max-width: 600px) {
+    .NavbarTwo > div:first-child {
+        display: none; /* Hide the first div containing spans */
+    }
+     .NavbarTwo > div:nth-child(2) {
+        display: block;
+        border-bottom : 1px solid gray;
+     }
+     .NavbarTwo > div:nth-child(2) > *{
+        padding-left: 4px;
+        padding-bottom: 2px;
+     }
+}
